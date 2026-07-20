@@ -3,7 +3,7 @@ name: person-identify
 description: Look up the current user's identity (real name, company, job title, department, email, employee ID, and manager) from the corporate directory via LDAP, authenticated with the existing Kerberos ticket. Use to establish who the knowledge base belongs to, when CLAUDE.md needs the user's identity, or when the user asks "who am I" / for their own directory record. To look up someone *other* than the current user, use the sibling `person-lookup` skill instead.
 license: Apache-2.0
 metadata:
-  version: "3.11.0"
+  version: "3.12.0"
   author: forwardimpact
 ---
 

@@ -3,7 +3,7 @@ name: anarlog-process
 description: Process Anarlog meeting sessions (memos, summaries, transcripts) into the knowledge graph. Extracts people, organizations, projects, and topics from AI-generated meeting summaries and user notes, creating or updating Obsidian-compatible notes in Knowledge/. Use when the user asks to process meeting notes or after Anarlog sessions.
 license: Apache-2.0
 metadata:
-  version: "3.11.0"
+  version: "3.12.0"
   author: forwardimpact
 ---
 

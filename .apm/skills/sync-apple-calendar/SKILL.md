@@ -4,7 +4,7 @@ description: Sync calendar events from the macOS Calendar app's local SQLite dat
 compatibility: Requires macOS with Apple Calendar configured and Full Disk Access granted to the terminal
 license: Apache-2.0
 metadata:
-  version: "3.11.0"
+  version: "3.12.0"
   author: forwardimpact
 ---
 

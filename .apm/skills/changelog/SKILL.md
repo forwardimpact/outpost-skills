@@ -3,7 +3,7 @@ name: changelog
 description: Record the knowledge-graph changes made during the current session into a single shared Knowledge/CHANGELOG.md so the team can see what changed and why. Use when the user asks to log, record, or write up the changes they just made to the knowledge base — typically at the end of a session of edits.
 license: Apache-2.0
 metadata:
-  version: "3.11.0"
+  version: "3.12.0"
   author: forwardimpact
 ---
 

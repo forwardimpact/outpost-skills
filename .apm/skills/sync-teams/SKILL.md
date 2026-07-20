@@ -4,7 +4,7 @@ description: Sync recent Microsoft Teams chat messages into ~/.cache/fit/outpost
 compatibility: Requires macOS with Microsoft Teams desktop app (com.microsoft.teams2) installed
 license: Apache-2.0
 metadata:
-  version: "3.11.0"
+  version: "3.12.0"
   author: forwardimpact
 ---
 

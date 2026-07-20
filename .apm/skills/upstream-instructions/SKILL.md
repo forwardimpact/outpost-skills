@@ -3,7 +3,7 @@ name: upstream-instructions
 description: Track changes made to this installation's instruction files — the root CLAUDE.md, agent profiles, and skills — and record them in a single root CHANGELOG.md so improvements can be contributed back to the upstream monorepo. Use when CLAUDE.md, agents, or skills have been modified, added, or removed locally and those changes should be documented for upstream.
 license: Apache-2.0
 metadata:
-  version: "3.11.0"
+  version: "3.12.0"
   author: forwardimpact
 ---
 

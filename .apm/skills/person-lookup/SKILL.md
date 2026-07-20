@@ -3,7 +3,7 @@ name: person-lookup
 description: Look up ANY person in the corporate directory from free-text input (an email address, or a first / last / full name) and return their record — real name, title, department, company, email, employee ID, office, and manager. Searches the Global Catalog forest-wide via LDAP, authenticated with the existing Kerberos ticket. Use when the user asks "who is X", needs someone's title / department / manager / email, or wants to disambiguate a name. For the *current* user's own identity, use the sibling `person-identify` skill instead.
 license: Apache-2.0
 metadata:
-  version: "3.11.0"
+  version: "3.12.0"
   author: forwardimpact
 ---
 

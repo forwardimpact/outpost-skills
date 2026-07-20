@@ -4,7 +4,7 @@ description: Sync email threads from the macOS Mail app's local SQLite database 
 compatibility: Requires macOS with Apple Mail configured and Full Disk Access granted to the terminal
 license: Apache-2.0
 metadata:
-  version: "3.11.0"
+  version: "3.12.0"
   author: forwardimpact
 ---
 

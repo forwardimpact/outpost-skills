@@ -3,7 +3,7 @@ name: meeting-prep
 description: Prepare for meetings by gathering context from the knowledge base and calendar. Use when the user asks to prep for a meeting or wants a briefing on upcoming meetings. Creates personalized briefings with attendee history, open items, and suggested talking points.
 license: Apache-2.0
 metadata:
-  version: "3.11.0"
+  version: "3.12.0"
   author: forwardimpact
 ---
 

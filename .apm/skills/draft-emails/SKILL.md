@@ -3,7 +3,7 @@ name: draft-emails
 description: Draft and send email responses using the knowledge base and calendar for context. Use when the user asks to draft, reply to, respond to, or send an email.
 license: Apache-2.0
 metadata:
-  version: "3.11.0"
+  version: "3.12.0"
   author: forwardimpact
 ---
 

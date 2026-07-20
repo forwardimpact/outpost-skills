@@ -4,7 +4,7 @@ description: Organize, tidy up, and find files in ~/Desktop/ and ~/Downloads/. U
 compatibility: Requires macOS filesystem access
 license: Apache-2.0
 metadata:
-  version: "3.11.0"
+  version: "3.12.0"
   author: forwardimpact
 ---
 

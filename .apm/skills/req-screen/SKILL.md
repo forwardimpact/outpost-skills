@@ -7,7 +7,7 @@ description: >
   Use when the user asks to evaluate a CV or when a new CV is detected.
 license: Apache-2.0
 metadata:
-  version: "3.11.0"
+  version: "3.12.0"
   author: forwardimpact
 ---
 

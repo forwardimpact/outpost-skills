@@ -4,7 +4,7 @@ description: Generate PDF slide decks from user requests using Playwright to ren
 compatibility: Requires Node.js installed. Playwright is installed on first use.
 license: Apache-2.0
 metadata:
-  version: "3.11.0"
+  version: "3.12.0"
   author: forwardimpact
 ---
 
