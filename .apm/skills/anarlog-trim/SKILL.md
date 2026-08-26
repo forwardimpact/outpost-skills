@@ -3,7 +3,7 @@ name: anarlog-trim
 description: Trim an Anarlog transcript to its logical end. A recording often continues after a meeting finishes. This skill finds the natural conclusion (goodbyes, sign-offs) and cuts the transcript there. Use when the user asks to trim, cut, or clean up an Anarlog transcript.
 license: Apache-2.0
 metadata:
-  version: "3.12.0"
+  version: "3.12.1"
   author: forwardimpact
 ---
 

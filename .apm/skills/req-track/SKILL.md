@@ -3,7 +3,7 @@ name: req-track
 description: Scan synced email threads for recruitment candidates, extract structured profiles, and create/update notes in Knowledge/Candidates/. Use when the user asks to track candidates, process recruitment emails, or update the hiring pipeline.
 license: Apache-2.0
 metadata:
-  version: "3.12.0"
+  version: "3.12.1"
   author: forwardimpact
 ---
 

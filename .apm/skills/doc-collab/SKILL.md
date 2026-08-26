@@ -3,7 +3,7 @@ name: doc-collab
 description: Help the user create, edit, and refine documents in the knowledge base. Use when the user asks to create, edit, review, or collaborate on a document. Supports direct edits and approval-based workflows, with context from the knowledge base for entity references.
 license: Apache-2.0
 metadata:
-  version: "3.12.0"
+  version: "3.12.1"
   author: forwardimpact
 ---
 
