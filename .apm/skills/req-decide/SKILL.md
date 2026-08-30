@@ -13,6 +13,9 @@ metadata:
 
 # Hiring Decision
 
+Write tier: `2-Confidential`
+Frontmatter: candidate (stamps `status`, `updated`)
+
 Synthesize all available evidence for a candidate into a final hiring
 recommendation. This is the culmination of the hiring pipeline. Every prior
 assessment feeds in.
@@ -33,26 +36,28 @@ This is **Stage 3** of the three-stage pipeline:
 ## Prerequisites
 
 - `fit-pathway` CLI installed.
-- `Knowledge/Candidates/{Name}/screening.md` exists.
-- At least one `Knowledge/Candidates/{Name}/interview-*.md`.
-- `Knowledge/Candidates/{Name}/brief.md` exists.
+- `2-Confidential/Candidates/{Name}/screening.md` exists.
+- At least one `2-Confidential/Candidates/{Name}/interview-*.md`.
+- `2-Confidential/Candidates/{Name}/brief.md` exists.
 
 ## Inputs
 
-- All artifacts in `Knowledge/Candidates/{Name}/`.
+- All artifacts in `2-Confidential/Candidates/{Name}/`.
 - Standard data via `fit-pathway`.
-- `Knowledge/Candidates/Insights.md` — cross-candidate context.
-- `Knowledge/Roles/*.md` — the candidate's requisition (positions, hiring
+- `2-Confidential/Candidates/Insights.md` — cross-candidate context.
+- `2-Confidential/Roles/*.md` — the candidate's requisition (positions, hiring
   manager, domain lead). Check the `**Status:**` field to distinguish active
   from historical reqs.
-- `Knowledge/Priorities/*.md` — strategic context.
+- `3-Team/Priorities/*.md` — strategic context.
 - Other active candidates at the same level — relative position.
 
 ## Outputs
 
-- `Knowledge/Candidates/{Name}/recommendation.md` — final recommendation.
-- Updated `Knowledge/Candidates/{Name}/brief.md` — status and link.
-- Updated `Knowledge/Candidates/Insights.md` — cross-candidate observations.
+- `2-Confidential/Candidates/{Name}/recommendation.md` — final recommendation.
+- Updated `2-Confidential/Candidates/{Name}/brief.md` — status, link, and
+  frontmatter `status` and `updated` stamped.
+- Updated `2-Confidential/Candidates/Insights.md` — cross-candidate
+  observations.
 
 <do_confirm_checklist goal="Verify the recommendation is grounded and
 audit-ready">
@@ -79,7 +84,7 @@ audit-ready">
 ### 1. Gather all evidence
 
 ```bash
-ls Knowledge/Candidates/{Name}/
+ls 2-Confidential/Candidates/{Name}/
 ```
 
 Read in order: `brief.md`, `screening.md`, every `interview-*.md`, relevant
@@ -123,8 +128,8 @@ Apply the level-confirmation criteria in
 If `brief.md` carries a `Req`:
 
 ```bash
-ls Knowledge/Roles/ | grep "{req_number}"
-cat "Knowledge/Roles/{matching file}"
+ls 2-Confidential/Roles/ | grep "{req_number}"
+cat "2-Confidential/Roles/{matching file}"
 ```
 
 Check the `**Status:**` field. Capture remaining positions, hiring manager,
@@ -134,9 +139,9 @@ domain lead, goal alignment, other candidates on the same req, and channel
 ### 6. Assess against the active pipeline
 
 ```bash
-cat Knowledge/Candidates/Insights.md
+cat 2-Confidential/Candidates/Insights.md
 
-for dir in Knowledge/Candidates/*/; do
+for dir in 2-Confidential/Candidates/*/; do
   if [ -f "$dir/screening.md" ]; then
     head -5 "$dir/screening.md"
   fi
@@ -154,8 +159,9 @@ Apply the [decision rules](references/rubric.md#decision-rules) and run the
 ### 8. Write the recommendation
 
 Use the template in [references/template.md](references/template.md). Save to
-`Knowledge/Candidates/{Name}/recommendation.md`. Carry the **advisory-only**
-banner. Cite specific evidence in skill, behaviour, level, and track sections.
+`2-Confidential/Candidates/{Name}/recommendation.md`. Carry the
+**advisory-only** banner. Cite specific evidence in skill, behaviour, level, and
+track sections.
 
 ### 9. Update brief and insights
 
@@ -164,8 +170,10 @@ Update `brief.md`:
 - Set `Status` to `recommended` or `not-recommended`.
 - Append `- [Hiring Recommendation](./recommendation.md)`.
 - Add the final pipeline entry with date and outcome.
+- Stamp the frontmatter: set `updated` to the decision date and `status` to
+  the closest registry value (agents select from `registry.yaml`).
 
-Update `Knowledge/Candidates/Insights.md` only when a cross-candidate
+Update `2-Confidential/Candidates/Insights.md` only when a cross-candidate
 observation deserves a record (strongest at level, a pattern in the sourcing
 channel, level-adjustment implications).
 

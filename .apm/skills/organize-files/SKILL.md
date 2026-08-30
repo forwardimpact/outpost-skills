@@ -10,6 +10,9 @@ metadata:
 
 # Organize Files
 
+Write tier: none (delegates graph writes to extract-entities)
+Frontmatter: none
+
 Organize, tidy up, and find files in `~/Desktop/` and `~/Downloads/`. Always
 preview changes before you act. Never delete without explicit confirmation.
 

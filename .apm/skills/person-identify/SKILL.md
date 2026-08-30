@@ -9,6 +9,9 @@ metadata:
 
 # Person Identify
 
+Write tier: none (cache only)
+Frontmatter: none
+
 Resolve the current user's identity from the corporate Active Directory over
 LDAP. This is the canonical way to establish **who the knowledge base belongs
 to**. It replaces any static identity file. Results reflect the live

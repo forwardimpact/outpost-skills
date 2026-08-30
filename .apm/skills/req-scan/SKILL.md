@@ -3,7 +3,7 @@ name: req-scan
 description: >
   Scan publicly available sources for candidates who indicate they are open for
   hire. Uses WebFetch to read public APIs (HN Algolia, GitHub, dev.to).
-  Writes prospect notes to Knowledge/Prospects/. Maintains
+  Writes prospect notes to 2-Confidential/Prospects/. Maintains
   cursor/dedup state in ~/.cache/fit/outpost/head-hunter/. Use when the
   head-hunter agent wakes or when the user asks to scan for open candidates.
 license: Apache-2.0
@@ -13,6 +13,9 @@ metadata:
 ---
 
 # Scan Open Candidates
+
+Write tier: `2-Confidential`
+Frontmatter: prospect
 
 Fetch and filter publicly available candidate posts from platforms where people
 **explicitly indicate** they are open for hire. This skill fetches, filters,
@@ -37,7 +40,7 @@ deduplicates, benchmarks, writes prospect notes, and updates memory.
 
 ## Outputs
 
-- `Knowledge/Prospects/{Name}.md`.
+- `2-Confidential/Prospects/{Name}.md`.
 - Updated `cursor.tsv`, `seen.tsv`, `prospects.tsv`, and `log.md`.
 - `~/.cache/fit/outpost/state/head_hunter_triage.md`.
 
@@ -106,7 +109,7 @@ Write notes for **strong** and **moderate** matches only. Use the template in
 [references/template.md](references/template.md).
 
 ```bash
-mkdir -p "Knowledge/Prospects"
+mkdir -p "2-Confidential/Prospects"
 ```
 
 ### 5. Update state

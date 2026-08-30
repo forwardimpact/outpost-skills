@@ -10,6 +10,9 @@ metadata:
 
 # Create Presentations
 
+Write tier: `0-Draft`
+Frontmatter: none
+
 Generate PDF slide decks from user requests. Playwright renders the HTML slides
 to PDF. This skill can pull context from the knowledge base for company info,
 project details, and people.
@@ -26,7 +29,7 @@ Run when the user asks to create a presentation, slide deck, or pitch deck.
 ## Inputs
 
 - User's description of the presentation
-- `Knowledge/` — optional context about company, product, team, projects
+- `3-Team/` — optional context about company, product, team, projects
 
 ## Outputs
 
@@ -36,7 +39,7 @@ Run when the user asks to create a presentation, slide deck, or pitch deck.
 
 ## Workflow
 
-1. Check `Knowledge/` for relevant context about the company, product, team,
+1. Check `3-Team/` for relevant context about the company, product, team,
    etc.
 2. Make sure Playwright is installed:
    `bun install playwright && bunx playwright install chromium`
@@ -61,7 +64,7 @@ Defaults: input = `/tmp/outpost-presentation.html`, output =
 ## Source Annotations — REQUIRED
 
 Decks are condensed views of source documents (knowledge-base notes, drafts
-under `Drafts/`, project docs). As a deck is iterated on, improvements get
+under `0-Draft/`, project docs). As a deck is iterated on, improvements get
 **back-ported** to those sources. So every deck must record what maps where.
 Embed the mapping as HTML comments (invisible in the browser and in the PDF).
 A deck with untraceable content is incomplete.

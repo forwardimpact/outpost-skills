@@ -10,6 +10,9 @@ metadata:
 
 # Sync Apple Mail
 
+Write tier: none (cache only)
+Frontmatter: none
+
 Sync email threads from the macOS Mail app's local SQLite database into
 `~/.cache/fit/outpost/apple_mail/` as markdown files. This is an automated skill
 in the data pipeline. It ingests raw email data that other skills (like
