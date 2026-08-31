@@ -8,7 +8,7 @@ description: >
   head-hunter agent wakes or when the user asks to scan for open candidates.
 license: Apache-2.0
 metadata:
-  version: "3.12.1"
+  version: "3.13.0"
   author: forwardimpact
 ---
 

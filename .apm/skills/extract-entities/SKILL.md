@@ -3,7 +3,7 @@ name: extract-entities
 description: Process synced email/calendar files from ~/.cache/fit/outpost/ and ad-hoc document files (e.g. from ~/Desktop/ or ~/Downloads/). Extract structured knowledge into the tier directories as Obsidian-compatible markdown notes. Use on a schedule, when the user asks to process/extract entities, or when another skill invokes it (e.g. organize-files). Builds the core knowledge graph from raw data.
 license: Apache-2.0
 metadata:
-  version: "3.12.1"
+  version: "3.13.0"
   author: forwardimpact
 ---
 

@@ -9,7 +9,7 @@ description: >
 compatibility: Requires macOS filesystem access
 license: Apache-2.0
 metadata:
-  version: "3.12.1"
+  version: "3.13.0"
   author: forwardimpact
 ---
 
